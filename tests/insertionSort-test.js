@@ -31,6 +31,8 @@ describe('Insertion Sort with filter', () => {
     let numbers2 = [1, 0, -3, -467, 4];
     let sorted = insertionSort(numbers2);
 
+    console.log(sorted)
+
     expect(sorted).to.deep.equal([-467, -3, 0, 1, 4])
   })
 

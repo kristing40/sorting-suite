@@ -15,7 +15,7 @@ describe('Bubble Sort with filter', () => {
   })
 
   it('should sort large arrays', () => {
-    let randomArray = genRandNum(500);
+    let randomArray = genRandNum(600);
     let compSorted = [ ...randomArray ].sort((a, b) => a - b);
 
     expect(bubbleSort(randomArray)).to.deep.equal(compSorted);

@@ -16,7 +16,7 @@ describe('Quick Sort with filter', () => {
   })
 
   it('should sort large arrays', () => {
-    let randomArray = genRandNum(13000);
+    let randomArray = genRandNum(275000);
     let compSorted = [ ...randomArray ].sort((a, b) => a - b);
 
     expect(quickSort(randomArray)).to.deep.equal(compSorted);
